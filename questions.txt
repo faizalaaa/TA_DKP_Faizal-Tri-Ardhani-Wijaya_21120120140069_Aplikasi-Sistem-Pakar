@@ -1,0 +1,12 @@
+Apakah belakangan ini anda mengalami gejala seperti demam, batuk kering dan kelelahan?
+Ya
+Tidak
+A
+Apakah anda juga mengalami rasa nyeri, tenggorokan serak, diare, mata merah, sakit kepala dan hilangnya indera perasa?
+Ya
+Tidak
+A
+Terakhir, apakah anda kesulitan untuk bernapas, nyeri dada dan hilangnya kemampuan berbicara maupun bergerak?
+Ya
+Tidak
+A
