@@ -1,4 +1,4 @@
-from tkinter import Tk, Frame, Label, Button 
+from tkinter import Tk, Frame, Label, Button
 from time import sleep
 
 class Question:
@@ -20,7 +20,7 @@ class Question:
 
     def getView(self, window):
         view = Frame(window)
-        Label(view, text=self.question).pack()
+        Label(view, text=self.question, font="Times 20").pack()
         Button(view, text=self.answers[0], command=lambda *args: self.check("A", view)).pack()
         Button(view, text=self.answers[1], command=lambda *args: self.check("B", view)).pack()
         return view
@@ -34,24 +34,24 @@ def askQuestion():
     if(len(questions) == index + 1):
         Label(window, text="Berdasarkan hasil analisa anda dinyatakan mengalami gejala covid tingkat:").pack()
         if (right == 3):
-            Label(window, text="Serius!!!", fg='red', font="Times 20").pack()
-            Label(window, text="Segeralah mencari bantuan medis!", font="20").pack()
-            Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="20").pack()
+            Label(window, text="Serius!!!", fg='red', font="Times 24").pack()
+            Label(window, text="Segeralah mencari bantuan medis!", font="Times 20").pack()
+            Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="Times 20").pack()
         elif (right == 2):
-            Label(window, text="Sedang!!!", fg='red', font="Times 20").pack()
-            Label(window, text="Anda cukup melakukan perawatan mandiri di rumah ", font="20").pack()
-            Label(window, text="Dengan perbanyak mengonsumsi makanan yang sehat, perbanyak minum air putih dan meminum obat penurun demam", font="20").pack()
-            Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="20").pack()
+            Label(window, text="Sedang!!!", fg='red', font="Times 24").pack()
+            Label(window, text="Anda cukup melakukan perawatan mandiri di rumah ", font="Times 20").pack()
+            Label(window, text="Dengan perbanyak mengonsumsi makanan yang sehat, perbanyak minum air putih dan meminum obat ringan", font="Times 20").pack()
+            Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="Times 20").pack()
         elif (right == 1):
-            Label(window, text="Ringan!!!", fg='red', font="Times 20").pack()
-            Label(window, text="Anda cukup melakukan perawatan mandiri di rumah", font="20").pack()
-            Label(window, text="Dengan mengonsumsi makanan yang sehat dan meminum obat penurun demam", font="20").pack()
-            Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="20").pack()            
+            Label(window, text="Ringan!!!", fg='red', font="Times 24").pack()
+            Label(window, text="Anda cukup melakukan perawatan mandiri di rumah", font="Times 20").pack()
+            Label(window, text="Dengan mengonsumsi makanan yang sehat dan meminum obat penurun demam", font="Times 20").pack()
+            Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="Times 20").pack()            
         else :
-            Label(window, text="Tidak terdampak", fg='red', font="Times 20").pack()
-            Label(window, text="Meskipun tidak ada gejala anda tetap harus menjaga imunitas tubuh dan perbanyak melakukan aktivitas olahraga", font="20").pack()
-            Label(window, text="Agar terhindar dari gejala Covid-19", font="20").pack()
-            Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="20").pack()            
+            Label(window, text="Tidak terdampak", fg='red', font="Times 24").pack()
+            Label(window, text="Meskipun tidak ada gejala anda tetap harus menjaga imunitas tubuh dan perbanyak melakukan aktivitas olahraga", font="Times 20").pack()
+            Label(window, text="Agar terhindar dari gejala Covid-19", font="Times 20").pack()
+            Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="Times 20").pack()            
         return window
     
     button.pack_forget()
@@ -80,7 +80,8 @@ number_of_questions = len(questions)
 window = Tk()
 window.geometry("800x400")
 window.title("Aplikasi Sistem Pakar")
-welcome=Label(window,text="Aplikasi Pendiagnosa Gejala Covid-19", bg='yellow', font="20").pack()
+
+welcome=Label(window,text="Aplikasi Pendiagnosa Gejala Covid-19", bg='yellow', font="Times 20").pack()
 
 #button
 button = Button(window, text="Start", command=askQuestion)
