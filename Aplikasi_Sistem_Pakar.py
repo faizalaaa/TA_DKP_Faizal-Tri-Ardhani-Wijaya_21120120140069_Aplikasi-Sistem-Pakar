@@ -37,17 +37,17 @@ def askQuestion():
             Label(window, text="Serius!!!", fg='red', font="Times 20").pack()
             Label(window, text="Segeralah mencari bantuan medis!", font="20").pack()
             Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="20").pack()
-        if (right == 2):
+        elif (right == 2):
             Label(window, text="Sedang!!!", fg='red', font="Times 20").pack()
             Label(window, text="Anda cukup melakukan perawatan mandiri di rumah ", font="20").pack()
             Label(window, text="Dengan perbanyak mengonsumsi makanan yang sehat, perbanyak minum air putih dan meminum obat penurun demam", font="20").pack()
             Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="20").pack()
-        if (right == 1):
+        elif (right == 1):
             Label(window, text="Ringan!!!", fg='red', font="Times 20").pack()
             Label(window, text="Anda cukup melakukan perawatan mandiri di rumah", font="20").pack()
             Label(window, text="Dengan mengonsumsi makanan yang sehat dan meminum obat penurun demam", font="20").pack()
             Label(window, text="Jangan lupa tetap patuhi protokol kesehatan 5M", font="20").pack()            
-        if (right == 0):
+        else :
             Label(window, text="Tidak terdampak", fg='red', font="Times 20").pack()
             Label(window, text="Meskipun tidak ada gejala anda tetap harus menjaga imunitas tubuh dan perbanyak melakukan aktivitas olahraga", font="20").pack()
             Label(window, text="Agar terhindar dari gejala Covid-19", font="20").pack()
